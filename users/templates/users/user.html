@@ -1,0 +1,9 @@
+{% extends "users/layout.html" %}
+{% block body %}
+<h1> welcome,  {{ request.user.first_name }}</h1>
+<ul> 
+    <li> Username: {{ request.user.username }}</li>
+    <li> email address: {{ request.user.email }}</li>
+</ul>
+</ul>
+{% endblock  %}
