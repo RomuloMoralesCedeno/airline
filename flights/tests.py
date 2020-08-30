@@ -47,12 +47,12 @@ class FlightTestCase(TestCase):
     #    self.assertEqual(response.status_code,200)
     #    self.assertEqual(response.context["flights"].count(),4)
 
-    def test_valid_flight_page(self):
-        a1 = Airport.objects.get(code="AAA")
-        f = Flight.objects.get(origin=a1,destination=a1)
-        c = Client()
-        response = c.get(f"/flight/{f.id}")
-        self.assertEqual(response.status_code,200)
+    #def test_valid_flight_page(self):
+    #    a1 = Airport.objects.get(code="AAA")
+    #    f = Flight.objects.get(origin=a1,destination=a1)
+    #    c = Client()
+    #    response = c.get(f"/flight/{f.id}")
+    #    self.assertEqual(response.status_code,200)
     
 
 
